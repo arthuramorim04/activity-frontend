@@ -1,0 +1,12 @@
+:roiot{
+    --color-blue: #F19CA2
+    --color-green: #B7D7D9
+    --color-yellow: #FFE9CD
+    --color-pink: #F19CA2
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}

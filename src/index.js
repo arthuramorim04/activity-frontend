@@ -1,11 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Routes,
+  Route, } from 'react-router-dom';
 import App from './App';
+import SingIn from './pages/singin/singin';
+import Register from './pages/singup/register';
+
+require('./assets/app.css')
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} />
+      <Route path="register" element={<Register />} />
+      <Route path="singin" element={<SingIn />} />
+    </Routes>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 

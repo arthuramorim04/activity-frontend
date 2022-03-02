@@ -1,12 +1,14 @@
 import React from 'react'
+import { Router ,Route, Routes } from 'react-router-dom';
+import Home from './pages/home/home'
+import SingIn from './pages/singin/singin'
+import Register from './pages/singup/register'
 
-import Book from './components/book/book'
+require('./assets/app.css')
 
 function App() {
   return (
-    <div className="App">
-      <Book />
-    </div>
+    <Home/>
   );
 }
 
